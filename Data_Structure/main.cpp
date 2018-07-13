@@ -7,9 +7,38 @@
 //
 
 #include <iostream>
+#include <string>
+#include <fstream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+void openFile()
+{
+    ifstream archEntrada;
+    string oracion, nomArch;
+    
+    
+    cout<<"Nombre del archivo"<<endl;
+    
+    archEntrada.open(nomArch);
+    
+    while(archEntrada.getline(oracion))
+    {
+        
+    }
+}
+
+void closeFile()
+{
+    ofstream archSalida;
+    
+}
+
+
+
+int main()
+{
+    
+    
     return 0;
 }
