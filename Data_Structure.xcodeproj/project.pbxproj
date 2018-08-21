@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5E1B26F212A0F3500BA2400 /* ACM_Points.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */; };
+		A57C8E7D212C53D200AD679F /* Linked_Lists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		A51BDB50211EAC830018A520 /* Sorting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sorting.cpp; sourceTree = "<group>"; };
 		A56D2D8721270FB000045BC1 /* Apuntadores.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Apuntadores.cpp; sourceTree = "<group>"; };
+		A57C8E7A212C4DFA00AD679F /* Listas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Listas.cpp; sourceTree = "<group>"; };
+		A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Linked_Lists.cpp; sourceTree = "<group>"; };
 		A5E023F420F8648F00457A82 /* Data_Structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Data_Structure; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E023F720F8648F00457A82 /* Matrix_Rotation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix_Rotation.cpp; sourceTree = "<group>"; };
 		A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ACM_Points.cpp; sourceTree = "<group>"; };
@@ -66,6 +68,8 @@
 				A5EF4A4D211B1C1F000A086B /* Sudoku_Check.cpp */,
 				A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */,
 				A51BDB50211EAC830018A520 /* Sorting.cpp */,
+				A57C8E7A212C4DFA00AD679F /* Listas.cpp */,
+				A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */,
 				A56D2D8721270FB000045BC1 /* Apuntadores.cpp */,
 				A5F62456211CE6C100F07B2E /* Saddle_Point.cpp */,
 			);
@@ -128,7 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5E1B26F212A0F3500BA2400 /* ACM_Points.cpp in Sources */,
+				A57C8E7D212C53D200AD679F /* Linked_Lists.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
