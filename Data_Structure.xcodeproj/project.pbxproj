@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5E023F820F8648F00457A82 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5E023F720F8648F00457A82 /* main.cpp */; };
+		A5E1B26F212A0F3500BA2400 /* ACM_Points.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A51BDB50211EAC830018A520 /* Sorting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sorting.cpp; sourceTree = "<group>"; };
+		A56D2D8721270FB000045BC1 /* Apuntadores.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Apuntadores.cpp; sourceTree = "<group>"; };
 		A5E023F420F8648F00457A82 /* Data_Structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Data_Structure; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5E023F720F8648F00457A82 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A5E023F720F8648F00457A82 /* Matrix_Rotation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix_Rotation.cpp; sourceTree = "<group>"; };
+		A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ACM_Points.cpp; sourceTree = "<group>"; };
+		A5EF4A4D211B1C1F000A086B /* Sudoku_Check.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sudoku_Check.cpp; sourceTree = "<group>"; };
+		A5F62456211CE6C100F07B2E /* Saddle_Point.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Saddle_Point.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +62,12 @@
 		A5E023F620F8648F00457A82 /* Data_Structure */ = {
 			isa = PBXGroup;
 			children = (
-				A5E023F720F8648F00457A82 /* main.cpp */,
+				A5E023F720F8648F00457A82 /* Matrix_Rotation.cpp */,
+				A5EF4A4D211B1C1F000A086B /* Sudoku_Check.cpp */,
+				A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */,
+				A51BDB50211EAC830018A520 /* Sorting.cpp */,
+				A56D2D8721270FB000045BC1 /* Apuntadores.cpp */,
+				A5F62456211CE6C100F07B2E /* Saddle_Point.cpp */,
 			);
 			path = Data_Structure;
 			sourceTree = "<group>";
@@ -118,7 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5E023F820F8648F00457A82 /* main.cpp in Sources */,
+				A5E1B26F212A0F3500BA2400 /* ACM_Points.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
