@@ -2,40 +2,40 @@
 
 using namespace std;
 
-template<typename T>
-class List {
-public:
-    
-    int getCant() {return iCant;};
-    T getDato(int n){return arrDatos[n];};
-    bool add(T dato);
-    bool del(T dato);
-    int search(T a);
-    void sort(bool bTrue);
-    void print();
-    void operator =(T &a)
-    {
-        for(int i = 0; i<iCant; i++)
-            this->arrDatos[i]= arrDatos[i];
-        
-    };
-    bool operator ==(T a)
-    {
-        
-        
-    };
-    List():iCant(0) {};
-    
-private:
-    T arrDatos[10];
-    int iCant;
-};
-
+#include "Lista.h"
 
 int main()
 {
+    List<int> Numero, Num;
+   
+    bool bTest = true,a, b;
     
+    //Test Case 1:
+    Numero.add(1);
+    Numero.add(2);
+    Numero.add(3);
+    Numero.add(4);
     
+    //Test Case 2:
+    Num.add(4);
+    Num.add(1);
+    Num.add(2);
+    Num.add(5);
+    
+    //Test Case 3:
+    a = Numero.del(0);
+    b = Numero.del(3);
+    
+   //Test Case 4:
+    cout<<Numero.search(4)<<endl;
+    
+    // Test Case #5:
+    Num.sort(!bTest);
+    Numero.sort(!bTest);
+    
+    //Test Case 6:
+    if(Num == Numero)
+        cout<<"Son iguales"<<endl;
     
     
     return 0;

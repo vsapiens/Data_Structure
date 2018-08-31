@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A57C8E7D212C53D200AD679F /* Linked_Lists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */; };
+		A51D2CB82135899500572CD4 /* Linked_Lists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,9 +24,13 @@
 
 /* Begin PBXFileReference section */
 		A51BDB50211EAC830018A520 /* Sorting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sorting.cpp; sourceTree = "<group>"; };
+		A55F2496212CCFB50044FE90 /* Lista.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lista.h; sourceTree = "<group>"; };
 		A56D2D8721270FB000045BC1 /* Apuntadores.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Apuntadores.cpp; sourceTree = "<group>"; };
 		A57C8E7A212C4DFA00AD679F /* Listas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Listas.cpp; sourceTree = "<group>"; };
 		A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Linked_Lists.cpp; sourceTree = "<group>"; };
+		A57C8E7E212C56DB00AD679F /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		A57C8E7F212C56F200AD679F /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		A580ABD7213503170006A434 /* Lista_V2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lista_V2.cpp; sourceTree = "<group>"; };
 		A5E023F420F8648F00457A82 /* Data_Structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Data_Structure; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E023F720F8648F00457A82 /* Matrix_Rotation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix_Rotation.cpp; sourceTree = "<group>"; };
 		A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ACM_Points.cpp; sourceTree = "<group>"; };
@@ -69,9 +73,13 @@
 				A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */,
 				A51BDB50211EAC830018A520 /* Sorting.cpp */,
 				A57C8E7A212C4DFA00AD679F /* Listas.cpp */,
+				A55F2496212CCFB50044FE90 /* Lista.h */,
 				A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */,
+				A57C8E7F212C56F200AD679F /* LinkedList.h */,
+				A57C8E7E212C56DB00AD679F /* Node.h */,
 				A56D2D8721270FB000045BC1 /* Apuntadores.cpp */,
 				A5F62456211CE6C100F07B2E /* Saddle_Point.cpp */,
+				A580ABD7213503170006A434 /* Lista_V2.cpp */,
 			);
 			path = Data_Structure;
 			sourceTree = "<group>";
@@ -132,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57C8E7D212C53D200AD679F /* Linked_Lists.cpp in Sources */,
+				A51D2CB82135899500572CD4 /* Linked_Lists.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
