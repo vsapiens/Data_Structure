@@ -32,7 +32,7 @@ public:
     void operator +=(T d);
     void operator +=(LinkedList<T> dato);
     void operator =(LinkedList<T> dato);
-    LinkedList(LinkedList<T> const &dato);
+    LinkedList(LinkedList<T> const &lista);
     void reverse();
     void shift(int n);
     void spin(int n);
@@ -259,44 +259,95 @@ void LinkedList<T>::print()
  • operator = : Asigna una lista encadenada complete
  */
 template <class T>
-bool LinkedList<T>::operator ==(LinkedList<T> dato)
+bool LinkedList<T>::operator ==(LinkedList<T> Lista)
 {
+    
+    Node<T> *curr = head;
+    if (this->size != Lista.size)
+        return false;
+    else
+    {
+        for(int i = 0; i < size ; i++ )
+        {
+            if(curr->getData() != Lista.get(i))
+                return false;
+            
+        }
+        return true;
+    }
     
 }
 template <class T>
 void LinkedList<T>::operator +=(T d)
 {
+    addLast(d);
+}
+template <class T>
+void LinkedList<T>::operator +=(LinkedList<T> lista)
+{
+     Node<T> *curr = head;
+    while(curr->getNext() != NULL)
+        curr = curr->getNext();
+    
+    curr->setNext(lista.head);
     
 }
 template <class T>
-void LinkedList<T>::operator +=(LinkedList<T> dato)
+void LinkedList<T>::operator =(LinkedList<T> Lista)
 {
+    Node<T> *curr1 = head;
+    Node<T> *curr2 = Lista.head;
     
+    while(curr2->getNext()!= NULL)
+        curr1->setNext(curr2->getNext());
 }
 template <class T>
-void LinkedList<T>::operator =(LinkedList<T> dato)
+LinkedList<T>::LinkedList(LinkedList<T> const &lista)
 {
-    
-}
-template <class T>
-LinkedList<T>::LinkedList(LinkedList<T> const &dato)
-{
-    
+    *this = lista;
 }    
 template <class T>
 void LinkedList<T>::reverse()
 {
-    
+    Node<T> *curr1 = head;
+    Node<T> *curr2 = curr1->getNext();
+    curr1->setNext(NULL);
+    while(curr2->getNext()!= NULL)
+    {
+        head = curr2;
+        curr2 =  curr2->getNext();
+        head->setNext(curr1);
+        curr1 = head;
+    }
 }
 template <class T>
 void LinkedList<T>::shift(int n)
 {
+    Node<T> *curr1 = head;
+        n = n % size;
     
+    for(int i = 0; i< n-1; i++)
+        curr1 = curr1->getNext();
+
+    Node<T> *curr2 = curr1;
+    
+    while(curr2->getNext()!= NULL)
+        curr2->getNext();
+    
+    
+    curr2->setNext(head);
+    head = curr1->getNext();
+    curr1->setNext(NULL);
 }
 
 template <class T>
 void LinkedList<T>::spin(int n)
 {
+    Node<T> *curr1 = head;
+    while(curr1->getNext()!= NULL)
+    {
+        
+    }
     
 }
 
