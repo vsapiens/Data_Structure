@@ -36,6 +36,7 @@ public:
     void reverse();
     void shift(int n);
     void spin(int n);
+    ~LinkedList();
     
 private:
     Node<T> *head;
@@ -49,6 +50,12 @@ LinkedList<T>::LinkedList(){
     size = 0;
 }
 
+template <class T>
+LinkedList<T>::~LinkedList()
+{
+    borraTodo();
+    
+}
 template <class T>
 void LinkedList<T>::borraTodo(){
     Node<T> * curr = head;
@@ -295,12 +302,16 @@ void LinkedList<T>::operator +=(LinkedList<T> lista)
 template <class T>
 void LinkedList<T>::operator =(LinkedList<T> Lista)
 {
+    deleteAll();
     Node<T> *curr1 = head;
     Node<T> *curr2 = Lista.head;
     
     while(curr2->getNext()!= NULL)
         curr1->setNext(curr2->getNext());
+    
+    curr2->setNext(nullptr);
 }
+
 template <class T>
 LinkedList<T>::LinkedList(LinkedList<T> const &lista)
 {
@@ -324,7 +335,7 @@ template <class T>
 void LinkedList<T>::shift(int n)
 {
     Node<T> *curr1 = head;
-        n = n % size;
+    n = n % size;
     
     for(int i = 0; i< n-1; i++)
         curr1 = curr1->getNext();
@@ -332,7 +343,7 @@ void LinkedList<T>::shift(int n)
     Node<T> *curr2 = curr1;
     
     while(curr2->getNext()!= NULL)
-        curr2->getNext();
+        curr2 =curr2->getNext();
     
     
     curr2->setNext(head);
@@ -343,12 +354,77 @@ void LinkedList<T>::shift(int n)
 template <class T>
 void LinkedList<T>::spin(int n)
 {
+    if(n>= size){
+        reverse();
+    }
+    else if(n > 1){
+        
+        int iTimes = size /n;
+        int extraNodes = size % n;
+        Node<T> *curr,*prev,*next,*first,*head2;
+        
+        first = head;
+        prev = head;
+        next = head->getNext();
+        for(int i = 0; i<n-1;i++)
+        {
+            head = next;
+            next = next->getNext();
+            head->setNext(prev);
+            prev = head;
+        }
+        first->setNext(next);
+        for(int i = 0; i<iTimes-1;i++)
+        {
+            prev = next;
+            head2 = next;
+            curr = prev;
+            next = next->getNext();
+            for(int j = 0; j<n-1;j++)
+            {
+                curr = next;
+                next = next->getNext();
+                curr->setNext(prev);
+                prev = curr;
+            }
+            first->setNext(curr);
+            head2->setNext(next);
+            first = head2;
+        }
+            prev = next;
+            head2 = next;
+            curr = prev;
+            next = next->getNext();
+        
+        for(int i = 0; i<extraNodes-1;i++)
+        {
+            curr = next;
+            next = next->getNext();
+            curr->setNext(prev);
+            prev = curr;
+        }
+        first->setNext(curr);
+        head2->setNext(nullptr);
+    }
+    
+    /*
     Node<T> *curr1 = head;
-    while(curr1->getNext()!= NULL)
+    Node<T> *curr2 = head->getNext();
+    Node<T> *curr3 = head;
+    n=size/3;
+    
+    for(int i = 0; i > n; i++)
+    {
+    curr2->setNext(curr1);
+    curr1= curr1->getNext();
+    curr2 =curr2->getNext();
+    }
+    head = curr1;
+    while(curr2->getNext()!= NULL)
     {
         
     }
-    
+    */
 }
 
 

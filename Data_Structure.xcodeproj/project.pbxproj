@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A51D2CB82135899500572CD4 /* Linked_Lists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */; };
+		A558BF90214221D400D47DD9 /* LL_Humberto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A558BF8E214221D400D47DD9 /* LL_Humberto.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		A51BDB50211EAC830018A520 /* Sorting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sorting.cpp; sourceTree = "<group>"; };
+		A558BF8E214221D400D47DD9 /* LL_Humberto.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LL_Humberto.cpp; sourceTree = "<group>"; };
+		A558BF8F214221D400D47DD9 /* LL_Humberto.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LL_Humberto.hpp; sourceTree = "<group>"; };
 		A55F2496212CCFB50044FE90 /* Lista.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lista.h; sourceTree = "<group>"; };
 		A56D2D8721270FB000045BC1 /* Apuntadores.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Apuntadores.cpp; sourceTree = "<group>"; };
 		A57C8E7A212C4DFA00AD679F /* Listas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Listas.cpp; sourceTree = "<group>"; };
@@ -73,6 +75,8 @@
 				A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */,
 				A51BDB50211EAC830018A520 /* Sorting.cpp */,
 				A57C8E7A212C4DFA00AD679F /* Listas.cpp */,
+				A558BF8E214221D400D47DD9 /* LL_Humberto.cpp */,
+				A558BF8F214221D400D47DD9 /* LL_Humberto.hpp */,
 				A55F2496212CCFB50044FE90 /* Lista.h */,
 				A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */,
 				A57C8E7F212C56F200AD679F /* LinkedList.h */,
@@ -140,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A51D2CB82135899500572CD4 /* Linked_Lists.cpp in Sources */,
+				A558BF90214221D400D47DD9 /* LL_Humberto.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
