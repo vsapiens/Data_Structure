@@ -31,6 +31,9 @@ public:
     bool change(int pos1, int pos2);
     int getSize();
     void print();
+    LinkedList<T> split(int n);
+    bool check();
+    void operator =(LinkedList<T> Lista);
 private:
     Node<T> *head;
     int size;
@@ -51,6 +54,18 @@ void LinkedList<T>::borraTodo(){
         delete curr;
         curr = head;
     }
+}
+template <class T>
+void LinkedList<T>::operator =(LinkedList<T> Lista)
+{
+    deleteAll();
+    Node<T> *curr1 = head;
+    Node<T> *curr2 = Lista.head;
+    
+    while(curr2->getNext()!= NULL)
+        curr1->setNext(curr2->getNext());
+    
+    curr2->setNext(nullptr);
 }
 
 template <class T>
@@ -229,4 +244,73 @@ void LinkedList<T>::print(){
     cout << endl<<"FIN"<<endl;
 }
 
+/*
+ split
+ Input: Número que determina la partición
+ Process: divide la lista en 2, en caso de ser menor el tamaño se conserva la lista
+ Output: La lista enncadenada modificada
+ */
+template <class T>
+LinkedList<T> LinkedList<T>::split(int n)
+{
+    Node<T> *curr1 = head;
+    Node<T> *curr2 = head;
+    LinkedList<T> lista;
+    int iCounter;
+    //Excepciones a la regla
+    if(size == 0 || size == 1 || size < n || size == n)
+        return *this;
+    //Llega hasta el penultimo para poder aterrizarlo a NULL
+    for(int i  = 0; i< n-1;i++)
+        curr1 = curr1->getNext();
+    
+    //Acomoda la lista encadenada original hasta la partición y nos da el apuntador a la segunda parte de la lista
+    curr2 = curr1->getNext();
+    curr1->setNext(nullptr);
+    size = n;
+    
+    curr1 = curr2;
+    lista.head = curr1;
+    //Añade el primer nodo a la lista
+    lista.addFirst(curr2->getData());
+    //Añade todos los nodos a la lista
+    while(curr2->getNext() != NULL)
+    {
+        curr2 = curr2->getNext();
+        lista.addLast(curr2->getData());
+        iCounter++;
+    }
+    curr2->setNext(nullptr);
+    //Determina la size de la nueva lista
+    lista.size = iCounter+1;
+    
+    //Regresa la lista
+    return lista;
+}
+
+/*
+ check
+ Input: Nada
+ Process: checa si la longitud concuerda con el size
+ Output: True en caso de que sean verdad
+ */
+template <class T>
+bool LinkedList<T>::check()
+{
+    //Apuntador a la head
+    Node<T> *curr1 = head;
+    
+    if(head == NULL)
+        return size == 0;
+    
+    int iCounter = 1;
+    //Recorre toda la lista para verificar si
+    while(curr1->getNext() != NULL)
+    {
+        curr1 = curr1->getNext();
+        iCounter++;
+    }
+    return iCounter == this->size;
+    
+}
 #endif /* LL_Humberto_hpp */

@@ -49,13 +49,12 @@ LinkedList<T>::LinkedList(){
     head = NULL;
     size = 0;
 }
-
 template <class T>
 LinkedList<T>::~LinkedList()
 {
     borraTodo();
-    
 }
+
 template <class T>
 void LinkedList<T>::borraTodo(){
     Node<T> * curr = head;
@@ -209,13 +208,13 @@ bool LinkedList<T>::change(int pos1, int pos2) {
     Node<T> *node1 = head, *node2 = head, *node3 = NULL;
     
     //for(int i = 0; i < pos1; i++)
-      //  node1 = node1->getNext();
+    //  node1 = node1->getNext();
     
     
     T dato1,dato2;
     
     //for(int i = 0; i < pos2; i++)
-      //  node2 = node2->getNext();
+    //  node2 = node2->getNext();
 
     int posMen = (pos1 < pos2 ? pos1 : pos2);
     int posMay = (pos1 > pos2 ? pos1 : pos2);
@@ -284,6 +283,7 @@ bool LinkedList<T>::operator ==(LinkedList<T> Lista)
     }
     
 }
+
 template <class T>
 void LinkedList<T>::operator +=(T d)
 {
@@ -297,7 +297,7 @@ void LinkedList<T>::operator +=(LinkedList<T> lista)
         curr = curr->getNext();
     
     curr->setNext(lista.head);
-    
+    size += lista.size;
 }
 template <class T>
 void LinkedList<T>::operator =(LinkedList<T> Lista)
@@ -322,7 +322,7 @@ void LinkedList<T>::reverse()
 {
     Node<T> *curr1 = head;
     Node<T> *curr2 = curr1->getNext();
-    curr1->setNext(NULL);
+    curr1->setNext(nullptr);
     while(curr2->getNext()!= NULL)
     {
         head = curr2;

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A558BF90214221D400D47DD9 /* LL_Humberto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A558BF8E214221D400D47DD9 /* LL_Humberto.cpp */; };
+		A5B8C922214EF4190044A561 /* Postfix_Expression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5B8C921214EF4190044A561 /* Postfix_Expression.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A5193E3B2142B5A300A55D9D /* split.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		A5193E3C2142B5B700A55D9D /* check.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = check.h; sourceTree = "<group>"; };
 		A51BDB50211EAC830018A520 /* Sorting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sorting.cpp; sourceTree = "<group>"; };
+		A541CDBE214BF384005D0583 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		A541CDBF214BF3F2005D0583 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		A541CDC0214BF40D005D0583 /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
 		A558BF8E214221D400D47DD9 /* LL_Humberto.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LL_Humberto.cpp; sourceTree = "<group>"; };
 		A558BF8F214221D400D47DD9 /* LL_Humberto.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LL_Humberto.hpp; sourceTree = "<group>"; };
 		A55F2496212CCFB50044FE90 /* Lista.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lista.h; sourceTree = "<group>"; };
@@ -33,6 +38,7 @@
 		A57C8E7E212C56DB00AD679F /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		A57C8E7F212C56F200AD679F /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
 		A580ABD7213503170006A434 /* Lista_V2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lista_V2.cpp; sourceTree = "<group>"; };
+		A5B8C921214EF4190044A561 /* Postfix_Expression.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Postfix_Expression.cpp; sourceTree = "<group>"; };
 		A5E023F420F8648F00457A82 /* Data_Structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Data_Structure; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E023F720F8648F00457A82 /* Matrix_Rotation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix_Rotation.cpp; sourceTree = "<group>"; };
 		A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ACM_Points.cpp; sourceTree = "<group>"; };
@@ -73,6 +79,10 @@
 				A5E023F720F8648F00457A82 /* Matrix_Rotation.cpp */,
 				A5EF4A4D211B1C1F000A086B /* Sudoku_Check.cpp */,
 				A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */,
+				A541CDBE214BF384005D0583 /* Stack.h */,
+				A541CDC0214BF40D005D0583 /* Queue.cpp */,
+				A5B8C921214EF4190044A561 /* Postfix_Expression.cpp */,
+				A541CDBF214BF3F2005D0583 /* Queue.h */,
 				A51BDB50211EAC830018A520 /* Sorting.cpp */,
 				A57C8E7A212C4DFA00AD679F /* Listas.cpp */,
 				A558BF8E214221D400D47DD9 /* LL_Humberto.cpp */,
@@ -80,6 +90,8 @@
 				A55F2496212CCFB50044FE90 /* Lista.h */,
 				A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */,
 				A57C8E7F212C56F200AD679F /* LinkedList.h */,
+				A5193E3B2142B5A300A55D9D /* split.h */,
+				A5193E3C2142B5B700A55D9D /* check.h */,
 				A57C8E7E212C56DB00AD679F /* Node.h */,
 				A56D2D8721270FB000045BC1 /* Apuntadores.cpp */,
 				A5F62456211CE6C100F07B2E /* Saddle_Point.cpp */,
@@ -144,7 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A558BF90214221D400D47DD9 /* LL_Humberto.cpp in Sources */,
+				A5B8C922214EF4190044A561 /* Postfix_Expression.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

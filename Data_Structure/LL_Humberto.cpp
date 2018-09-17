@@ -9,11 +9,9 @@
 using namespace std;
 #include "LL_Humberto.hpp"
 
-
-
 int main(){
     LinkedList<string> miLista;
-    
+    LinkedList<string> nLista;
     miLista.addFirst("HOLA");
     miLista.addFirst("CRAYOLA");
     miLista.addLast("TIEMPO");
@@ -34,15 +32,17 @@ int main(){
     miLista.print();
     cout << "Salida: "<<miLista.set("ED",3)<<endl;
     miLista.print();
-    
+    //nLista.print();
     LinkedList<int> *tuLista = new LinkedList<int>();
     tuLista->addLast(10);
     tuLista->addFirst(7);
     tuLista->addLast(500);
     tuLista->add(15,1);
     tuLista->print();
+    miLista.split(3);
+    miLista.print();
     delete tuLista;
     
-    
+    return 0;
     
 }
