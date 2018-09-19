@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5B8C922214EF4190044A561 /* Postfix_Expression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5B8C921214EF4190044A561 /* Postfix_Expression.cpp */; };
+		A546BA7021513E2C003D352C /* Clase_Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A546BA6F21513E2C003D352C /* Clase_Queue.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,12 +23,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A517A62521501925004C51F3 /* Expresiones_Molleja.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Expresiones_Molleja.cpp; sourceTree = "<group>"; };
 		A5193E3B2142B5A300A55D9D /* split.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
 		A5193E3C2142B5B700A55D9D /* check.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = check.h; sourceTree = "<group>"; };
 		A51BDB50211EAC830018A520 /* Sorting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sorting.cpp; sourceTree = "<group>"; };
 		A541CDBE214BF384005D0583 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
-		A541CDBF214BF3F2005D0583 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		A541CDBF214BF3F2005D0583 /* Clase_Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Clase_Queue.h; sourceTree = "<group>"; };
 		A541CDC0214BF40D005D0583 /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
+		A546BA6C21513911003D352C /* Clase_Stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Clase_Stack.cpp; sourceTree = "<group>"; };
+		A546BA6F21513E2C003D352C /* Clase_Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Clase_Queue.cpp; sourceTree = "<group>"; };
 		A558BF8E214221D400D47DD9 /* LL_Humberto.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LL_Humberto.cpp; sourceTree = "<group>"; };
 		A558BF8F214221D400D47DD9 /* LL_Humberto.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LL_Humberto.hpp; sourceTree = "<group>"; };
 		A55F2496212CCFB50044FE90 /* Lista.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lista.h; sourceTree = "<group>"; };
@@ -81,12 +84,15 @@
 				A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */,
 				A541CDBE214BF384005D0583 /* Stack.h */,
 				A541CDC0214BF40D005D0583 /* Queue.cpp */,
+				A546BA6F21513E2C003D352C /* Clase_Queue.cpp */,
 				A5B8C921214EF4190044A561 /* Postfix_Expression.cpp */,
-				A541CDBF214BF3F2005D0583 /* Queue.h */,
+				A541CDBF214BF3F2005D0583 /* Clase_Queue.h */,
+				A546BA6C21513911003D352C /* Clase_Stack.cpp */,
 				A51BDB50211EAC830018A520 /* Sorting.cpp */,
 				A57C8E7A212C4DFA00AD679F /* Listas.cpp */,
 				A558BF8E214221D400D47DD9 /* LL_Humberto.cpp */,
 				A558BF8F214221D400D47DD9 /* LL_Humberto.hpp */,
+				A517A62521501925004C51F3 /* Expresiones_Molleja.cpp */,
 				A55F2496212CCFB50044FE90 /* Lista.h */,
 				A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */,
 				A57C8E7F212C56F200AD679F /* LinkedList.h */,
@@ -156,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5B8C922214EF4190044A561 /* Postfix_Expression.cpp in Sources */,
+				A546BA7021513E2C003D352C /* Clase_Queue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

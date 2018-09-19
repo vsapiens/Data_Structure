@@ -25,39 +25,42 @@ int calculadora(int x, int y, string d)
     return NULL;
 }
 
-void pqResult(priority_queue<int> &pq,string d)
+void pqResult(priority_queue<int,vector<int>,greater<int>> &pq,string d)
 {
     int a,b;
     a = pq.top();
     pq.pop();
     b = pq.top();
     pq.pop();
-    if(d == "+")
-    {
-        return
-        
-    }
-    
-    else if(d == "-")
-    
-    else if(d == "/")
-    
-    else if(d == "*")
-    
+    pq.push(calculadora(b, a, d));
+}
+void qResult(queue<int> &q,string d)
+{
+    int a,b;
+    a = q.front();
+    q.pop();
+    b = q.front();
+    q.pop();
+    q.push(calculadora(b, a, d));
 }
 
-void qResult(queue<int> &q,string d);
 
-void sResult(stack<int> &s,string d);
+void sResult(stack<int> &s,string d){
+    int a,b;
+    a = s.top();
+    s.pop();
+    b = s.top();
+    s.pop();
+    s.push(calculadora(b, a, d));
+}
 
 int main()
 {
 string d,data;
 getline(cin, data);
-    int a,b;
     while (data != "#")
     {
-        priority_queue<int> pq;
+        priority_queue<int,vector<int>,greater<int>> pq;
         queue<int> q;
         stack<int> s;
         
@@ -68,8 +71,9 @@ getline(cin, data);
             
             if(d == "+"||d == "*"||d == "/"||d == "-")
             {
-                
-                
+                pqResult(pq, d);
+                qResult(q, d);
+                sResult(s, d);
             }
             else{
             s.push(stoi(d));
@@ -77,6 +81,9 @@ getline(cin, data);
             q.push(stoi(d));
             }
         }
+        cout<<s.top()<<" "<<q.front()<<" "<<pq.top()<<endl;
+        
+        
         getline(cin, data);
     }
     

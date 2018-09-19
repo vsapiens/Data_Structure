@@ -1,26 +1,53 @@
-//
-//  Stack.h
-//  Data_Structure
-//
-//  Created by Erick González on 9/14/18.
-//  Copyright © 2018 Erick González. All rights reserved.
-//
 
+#include "Node.h"
 #ifndef Stack_h
 #define Stack_h
-template<typename T>
-class Stack(){
+template<class T>
+class stack{
 public:
+    stack();
+    ~stack();
     
+    void push(T data);
     void pop();
-    void push();
-    bool isEmpty();
-    T top();
+    T top(){return tope->getData();};
+    int size(){return tam;};
+    bool empty(){return tope == nullptr;};
+    
 private:
-    T dato;
+    Node<T> *tope;
+    int tam;
+    
 };
 
+template<class T>
+stack<T>::stack():tam(0),tope(nullptr){};
 
 
+template<class T>
+stack<T>::~stack()
+{
+    Node<T> *curr = tope;
+    while (tope != nullptr){
+        tope = tope->getNext();
+        delete curr;
+        curr = tope;
+    }
+}
 
-#endif /* Stack_h */
+template<class T>
+void stack<T>::push(T data)
+{
+    tope = new Node<T>(data,tope);
+    ++tam;
+}
+
+template<class T>
+void stack<T>::pop()
+{
+    Node<T> *curr = tope;
+    tope = tope->getNext();
+    delete curr;
+    --tam;
+}
+#endif
