@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A546BA7021513E2C003D352C /* Clase_Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A546BA6F21513E2C003D352C /* Clase_Queue.cpp */; };
+		A5C6930521542D36009C709C /* Parenthesis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A56295872152E5ED0050D2EB /* Parenthesis.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +35,7 @@
 		A558BF8E214221D400D47DD9 /* LL_Humberto.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LL_Humberto.cpp; sourceTree = "<group>"; };
 		A558BF8F214221D400D47DD9 /* LL_Humberto.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LL_Humberto.hpp; sourceTree = "<group>"; };
 		A55F2496212CCFB50044FE90 /* Lista.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lista.h; sourceTree = "<group>"; };
+		A56295872152E5ED0050D2EB /* Parenthesis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Parenthesis.cpp; sourceTree = "<group>"; };
 		A56D2D8721270FB000045BC1 /* Apuntadores.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Apuntadores.cpp; sourceTree = "<group>"; };
 		A57C8E7A212C4DFA00AD679F /* Listas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Listas.cpp; sourceTree = "<group>"; };
 		A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Linked_Lists.cpp; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 				A5EF4A4D211B1C1F000A086B /* Sudoku_Check.cpp */,
 				A5E1B26E212A0F3500BA2400 /* ACM_Points.cpp */,
 				A541CDBE214BF384005D0583 /* Stack.h */,
+				A56295872152E5ED0050D2EB /* Parenthesis.cpp */,
 				A541CDC0214BF40D005D0583 /* Queue.cpp */,
 				A546BA6F21513E2C003D352C /* Clase_Queue.cpp */,
 				A5B8C921214EF4190044A561 /* Postfix_Expression.cpp */,
@@ -162,7 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A546BA7021513E2C003D352C /* Clase_Queue.cpp in Sources */,
+				A5C6930521542D36009C709C /* Parenthesis.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

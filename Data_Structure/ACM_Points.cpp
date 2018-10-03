@@ -12,19 +12,19 @@
 */
 using namespace std;
 
-struct Team{
+struct Team
+{
     string sName = "";
-    int iAttempts[10], iSolved=0, iTime=0;
-    
+    int iAttempts[10], iSolved = 0, iTime = 0;
     Team()
     {
-        for(int i=0; i<10; i++)
+        for (int i = 0; i < 10; i++)
             iAttempts[i] = 0;
-        
+
         iSolved = 0;
         sName = "";
     }
-   /* bool operator >(const Team& A)const
+    /* bool operator >(const Team& A)const
     {
         
         if (iSolved==A.iSolved)
@@ -33,32 +33,30 @@ struct Team{
     };
     
     */
-    
 };
 
 bool compareWin(const Team &A, const Team &B)
 {
-    if (B.iSolved==A.iSolved)
+    if (B.iSolved == A.iSolved)
         return B.iTime > A.iTime;
-    
+
     return B.iSolved < A.iSolved;
 }
 
-
-void modifyVector(vector<Team> &ACM, string sName,int cProb, int iTime, int cAccept)
+void modifyVector(vector<Team> &ACM, string sName, int cProb, int iTime, int cAccept)
 {
-    for(auto i = ACM.begin();i != ACM.end();i++)
+    for (auto i = ACM.begin(); i != ACM.end(); i++)
     {
-        if(i->sName == sName && !(cAccept == 'A'))
+        if (i->sName == sName && !(cAccept == 'A'))
         {
-            i->iAttempts[cProb-'A'] += 20;
+            i->iAttempts[cProb - 'A'] += 20;
         }
-        
-        else if(i->sName ==sName && (cAccept == 'A'))
+
+        else if (i->sName == sName && (cAccept == 'A'))
         {
             i->iSolved++;
-            i->iAttempts[cProb-0X41] += iTime;
-            i->iTime += i->iAttempts[cProb-0X41];
+            i->iAttempts[cProb - 0X41] += iTime;
+            i->iTime += i->iAttempts[cProb - 0X41];
         }
     }
 }
@@ -66,13 +64,14 @@ void modifyVector(vector<Team> &ACM, string sName,int cProb, int iTime, int cAcc
 void displayTable(vector<Team> ACM)
 {
     int j = 1;
-    for(auto i = ACM.begin();i != ACM.end();i++,j++)
+    for (auto i = ACM.begin(); i != ACM.end(); i++, j++)
     {
-        cout<<j<<" - "<<i->sName<<" "<<i->iSolved;
-        if(i->iSolved !=0)
-            cout<<" "<<i->iTime<<endl;
-        
-        else cout<<" -"<<endl;
+        cout << j << " - " << i->sName << " " << i->iSolved;
+        if (i->iSolved != 0)
+            cout << " " << i->iTime << endl;
+
+        else
+            cout << " -" << endl;
     }
 }
 
@@ -80,26 +79,26 @@ int main()
 {
     int iTeams, iProb, iSol;
     string sName;
-    cin>>iTeams>>iProb;
+    cin >> iTeams >> iProb;
     vector<Team> ACM;
-    
+
     for (int i = 0; i < iTeams; i++)
     {
-        cin>>sName;
+        cin >> sName;
         Team tTeam;
         tTeam.sName = sName;
         ACM.push_back(tTeam);
     }
-    cin>>iSol;
+    cin >> iSol;
     int iTime;
     string name;
-    char cProb,cAccept;
-    for(int i = 0; i < iSol; i++)
+    char cProb, cAccept;
+    for (int i = 0; i < iSol; i++)
     {
-        cin>>sName>>cProb>>iTime>>cAccept;
+        cin >> sName >> cProb >> iTime >> cAccept;
         modifyVector(ACM, sName, cProb, iTime, cAccept);
     }
-    sort(ACM.begin(), ACM.end(),compareWin);
+    sort(ACM.begin(), ACM.end(), compareWin);
     displayTable(ACM);
     return 0;
 }

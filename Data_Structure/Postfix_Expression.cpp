@@ -82,8 +82,6 @@ getline(cin, data);
             }
         }
         cout<<s.top()<<" "<<q.front()<<" "<<pq.top()<<endl;
-        
-        
         getline(cin, data);
     }
     
