@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5C6930521542D36009C709C /* Parenthesis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A56295872152E5ED0050D2EB /* Parenthesis.cpp */; };
+		A57EA9912167B0ED00AEB4E6 /* BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A57EA9902167B0ED00AEB4E6 /* BST.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +41,8 @@
 		A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Linked_Lists.cpp; sourceTree = "<group>"; };
 		A57C8E7E212C56DB00AD679F /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		A57C8E7F212C56F200AD679F /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		A57EA9902167B0ED00AEB4E6 /* BST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BST.cpp; sourceTree = "<group>"; };
+		A57EA9922167B19E00AEB4E6 /* NodeT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeT.h; sourceTree = "<group>"; };
 		A580ABD7213503170006A434 /* Lista_V2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lista_V2.cpp; sourceTree = "<group>"; };
 		A5B8C921214EF4190044A561 /* Postfix_Expression.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Postfix_Expression.cpp; sourceTree = "<group>"; };
 		A5E023F420F8648F00457A82 /* Data_Structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Data_Structure; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 				A558BF8E214221D400D47DD9 /* LL_Humberto.cpp */,
 				A558BF8F214221D400D47DD9 /* LL_Humberto.hpp */,
 				A517A62521501925004C51F3 /* Expresiones_Molleja.cpp */,
+				A57EA9902167B0ED00AEB4E6 /* BST.cpp */,
 				A55F2496212CCFB50044FE90 /* Lista.h */,
 				A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */,
 				A57C8E7F212C56F200AD679F /* LinkedList.h */,
@@ -103,6 +106,7 @@
 				A57C8E7E212C56DB00AD679F /* Node.h */,
 				A56D2D8721270FB000045BC1 /* Apuntadores.cpp */,
 				A5F62456211CE6C100F07B2E /* Saddle_Point.cpp */,
+				A57EA9922167B19E00AEB4E6 /* NodeT.h */,
 				A580ABD7213503170006A434 /* Lista_V2.cpp */,
 			);
 			path = Data_Structure;
@@ -164,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C6930521542D36009C709C /* Parenthesis.cpp in Sources */,
+				A57EA9912167B0ED00AEB4E6 /* BST.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

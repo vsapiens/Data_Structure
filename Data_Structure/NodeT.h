@@ -1,13 +1,12 @@
+#include <iostream>
 class NodeT
 {
   public:
     NodeT(int data);
-
+    //NodeT(int data, NodeT *left, NodeT *right);
     int getData();
     NodeT *getLeft();
     NodeT *getRight();
-
-    NodeT(int data, NodeT *left, NodeT *right);
     void setData(int data);
     void setLeft(NodeT *left);
     void setRight(NodeT *right);
@@ -20,13 +19,8 @@ class NodeT
 NodeT::NodeT(int data)
 {
     this->data = data;
-}
-
-NodeT::NodeT(int data, NodeT *left, NodeT *right)
-{
-    this->data = data;
-    this->left = left;
-    this->right = right;
+    this->left = nullptr;
+    this->right = nullptr;
 }
 
 int NodeT::getData()
@@ -53,6 +47,7 @@ void NodeT::setLeft(NodeT *left)
 {
     this->left = left;
 }
+
 void NodeT::setRight(NodeT *right)
 {
     this->right = right;
