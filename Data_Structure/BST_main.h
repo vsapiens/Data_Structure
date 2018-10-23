@@ -159,7 +159,6 @@ void BST::add(int data)
         }
     }
 }
-
 int BST::howManyChildren(NodeT *r)
 {
     int cant = 0;
@@ -171,7 +170,6 @@ int BST::howManyChildren(NodeT *r)
 
     return cant;
 }
-
 int BST::succ(NodeT *r)
 {
 
@@ -623,7 +621,6 @@ void BST::mirror()
 {
     mirror(root);
 }
-
 int BST::cuenta(NodeT *r)
 {
     if (r == nullptr)
