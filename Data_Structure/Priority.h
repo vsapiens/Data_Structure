@@ -15,23 +15,24 @@ class Heap
   public:
     Heap();
     Heap(bool bPriority);
-    bool push(int dato);
-    bool pop(int dato);
+    void push(int dato);
+    void pop(int dato);
 
     int top()
     {
         if (!vHeap.empty())
-            return vHeap[0];
+            return vHeap[1];
         return -1;
     };
 
-    int size() { return vHeap.size(); };
+    int size() { return vHeap.size() - 1; };
     bool empty() { return vHeap.empty(); };
 
   private:
     std::vector<int> vHeap;
     bool bPriority;
-    bool deleteRoot(std::vector<int> vHeap);
+    void deleteRoot(std::vector<int> vHeap);
+    bool checkGreater(int a, int b);
 };
 
 Heap::Heap()
@@ -43,29 +44,46 @@ Heap::Heap(bool bPriority)
     this->bPriority = bPriority;
 }
 
-bool Heap::push(int dato)
+void Heap::push(int dato)
 {
-}
-
-bool Heap::deleteRoot(std::vector<int> vHeap)
-{
-
-    std::swap(vHeap[0], vHeap[vHeap.size() - 1]);
-    vHeap.pop_back();
-}
-bool deleteData(std::vector<int> vHeap, int iPos)
-{
-}
-
-bool Heap::pop(int dato)
-{
-    if (dato == vHeap[0])
-        return deleteRoot(vHeap);
-
-    for (int i = 0; i < vHeap.size(); i++)
+    if (vHeap.empty())
     {
-        if (vHeap[i] == dato)
-            return deleteData(vHeap, i);
+        vHeap.at(1) = dato;
+        return;
     }
-    return false;
+
+    vHeap.push_back(dato);
+    int n = vHeap.size();
+
+    while (n / 2 >= 0 && (vHeap[n] > vHeap[n / 2]))
+    {
+        std::swap(vHeap[n], vHeap[n / 2]);
+        n /= 2;
+    }
+}
+
+bool Heap::checkGreater(int a, int b)
+{
+    return this->bPriority ? a > b : a < b;
+}
+
+void Heap::pop(int dato)
+{
+    std::swap(vHeap[1], vHeap[vHeap.size() - 1]);
+    vHeap.pop_back();
+
+    for (int i = 0; i < vHeap.size() / 2; ++i)
+    {
+
+        if (checkGreater(vHeap[i * 2 - 1], vHeap[i * 2]))
+        {
+            if (!checkGreater(vHeap[i], vHeap[i * 2 - 1]))
+                std::swap(vHeap[i], vHeap[i * 2 - 1]);
+        }
+        else
+        {
+            if (!checkGreater(vHeap[i], vHeap[i * 2]))
+                std::swap(vHeap[i], vHeap[i * 2]);
+        }
+    }
 }

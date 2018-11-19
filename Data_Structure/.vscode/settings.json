@@ -13,8 +13,12 @@
         "type_traits": "cpp",
         "typeinfo": "cpp",
         "algorithm": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "vector": "cpp",
+        "iosfwd": "cpp",
+        "map": "cpp",
+        "ostream": "cpp",
+        "unordered_map": "cpp"
     },
-    "editor.formatOnSave": true,
     "C_Cpp.errorSquiggles": "Disabled"
 }

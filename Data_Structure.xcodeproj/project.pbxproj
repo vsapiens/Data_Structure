@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A57EA9912167B0ED00AEB4E6 /* BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A57EA9902167B0ED00AEB4E6 /* BST.cpp */; };
+		A572A62F219FE16500A31AF4 /* Boggle2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A572A62E219FE16500A31AF4 /* Boggle2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +37,7 @@
 		A55F2496212CCFB50044FE90 /* Lista.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lista.h; sourceTree = "<group>"; };
 		A56295872152E5ED0050D2EB /* Parenthesis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Parenthesis.cpp; sourceTree = "<group>"; };
 		A56D2D8721270FB000045BC1 /* Apuntadores.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Apuntadores.cpp; sourceTree = "<group>"; };
+		A572A62E219FE16500A31AF4 /* Boggle2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Boggle2.cpp; sourceTree = "<group>"; };
 		A57C8E7A212C4DFA00AD679F /* Listas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Listas.cpp; sourceTree = "<group>"; };
 		A57C8E7C212C53D200AD679F /* Linked_Lists.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Linked_Lists.cpp; sourceTree = "<group>"; };
 		A57C8E7E212C56DB00AD679F /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 				A5B8C921214EF4190044A561 /* Postfix_Expression.cpp */,
 				A541CDBF214BF3F2005D0583 /* Clase_Queue.h */,
 				A546BA6C21513911003D352C /* Clase_Stack.cpp */,
+				A572A62E219FE16500A31AF4 /* Boggle2.cpp */,
 				A51BDB50211EAC830018A520 /* Sorting.cpp */,
 				A57C8E7A212C4DFA00AD679F /* Listas.cpp */,
 				A558BF8E214221D400D47DD9 /* LL_Humberto.cpp */,
@@ -168,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57EA9912167B0ED00AEB4E6 /* BST.cpp in Sources */,
+				A572A62F219FE16500A31AF4 /* Boggle2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
